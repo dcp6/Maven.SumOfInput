@@ -1,6 +1,7 @@
 /**
  * Created by iyasuwatts on 10/17/17.
  */
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
@@ -9,10 +10,13 @@ public class Main {
         System.out.print("Enter a number: ");
 
         // takes input from the keyboard
-        String number = input.nextInt();
+        int number = input.nextInt();
+       int sum = 0;
+       for ( int i = 1; i <= number; i++) {
+           sum += i;
+       }
+       System.out.print(sum);
 
-        // closes the scanner
-        Scanner.close();
     }
     }
 
